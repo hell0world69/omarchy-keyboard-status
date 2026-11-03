@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "hell0world.keyboard-status",
+  "name": "Keyboard Status",
+  "version": "1.0.0",
+  "author": "hell0world",
+  "license": "MIT",
+  "description": "Keyboard connection and lock-key status with a detail panel",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Keyboard Status",
+    "description": "Keyboard glyph showing whether the keyboard is on the USB cable, a 2.4G dongle or Bluetooth, with a CAPS tag while Caps Lock is on and a panel listing every lock key.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "match": "",
+      "showCaps": true,
+      "hideWhenAbsent": false
+    },
+    "schema": [
+      {
+        "key": "match",
+        "type": "string",
+        "label": "Device match",
+        "defaultValue": "",
+        "description": "Case-insensitive substring of the keyboard's input name, e.g. \"galaxy100\". Empty auto-detects USB/Bluetooth devices with a Caps Lock LED that are not mice. See `cat /proc/bus/input/devices`."
+      },
+      {
+        "key": "showCaps",
+        "type": "boolean",
+        "label": "Show CAPS tag in the bar",
+        "defaultValue": true,
+        "description": "Adds a CAPS tag beside the glyph while Caps Lock is on."
+      },
+      {
+        "key": "hideWhenAbsent",
+        "type": "boolean",
+        "label": "Hide when the keyboard is gone",
+        "defaultValue": false,
+        "description": "Off keeps a dimmed glyph when no matching keyboard is connected."
+      }
+    ]
+  }
+}

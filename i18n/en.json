@@ -1,0 +1,23 @@
+{
+  "status.wired": "USB cable",
+  "status.dongle": "2.4G dongle",
+  "status.bluetooth": "Bluetooth",
+  "status.absent": "Not connected",
+  "label.connection": "Connection",
+  "label.dongle": "2.4G dongle",
+  "label.caps": "Caps Lock",
+  "label.num": "Num Lock",
+  "label.scroll": "Scroll Lock",
+  "label.layout": "Layout",
+  "label.battery": "Battery",
+  "value.on": "On",
+  "value.off": "Off",
+  "value.plugged": "Plugged in",
+  "value.unplugged": "Not plugged in",
+  "value.noBattery": "Press Fn + B on the keyboard",
+  "tag.caps": "CAPS",
+  "fallbackName": "Keyboard",
+  "tooltip.absent": "Keyboard not connected",
+  "tooltip.status": "%1 · %2",
+  "tooltip.caps": "%1 · %2 · Caps Lock on"
+}
